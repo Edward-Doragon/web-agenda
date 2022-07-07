@@ -1,3 +1,6 @@
+<?php
+include '../services/protecao.php'
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,9 +15,10 @@
     <header>
         <nav class="navbar">
             <ul>
-                <li class="list-item"> <a href="../home/home.html">Home</a></li>
-                <li class="list-item"> <a href="../add-contato/add-contato.html">Adicionar contato</a> </li>
-                <li class="list-item"> <a href="../visualizar-contato/visualizar-contato.html">Visualizar Contatos</a> </li>
+                <li class="list-item"> <a href="../home/home.php">Home</a></li>
+                <li class="list-item"> <a href="../add-contato/add-contato.php">Adicionar contato</a> </li>
+                <li class="list-item"> <a href="../visualizar-contato/visualizar-contato.php">Visualizar Contatos</a> </li>
+                <li class="list-item"> <a href="../login/login.html">Sair</a></li>
             </ul>
         </nav>
     </header>

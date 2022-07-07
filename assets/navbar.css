@@ -1,0 +1,14 @@
+.navbar{
+    display: flex;
+    height: 60px;
+    background: rgb(102, 180, 223);
+}
+
+.list-item{
+    list-style: none;
+    display: inline-block;
+    margin-right: 15px;
+    padding: 15px;
+    font-size: 1.5rem;
+ 
+}
