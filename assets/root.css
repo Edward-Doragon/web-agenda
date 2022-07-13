@@ -1,0 +1,13 @@
+:root{
+    --brand400: #0774e7;
+    --brand500: #145eb3;
+    --brand600: #204986;
+
+    --display0: #fff;
+    --display100: #eaeef3;
+    --display200: #c5ced7;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

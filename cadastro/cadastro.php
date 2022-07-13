@@ -12,7 +12,7 @@ try{
 
     $nome = $_POST['nome'];
     $email = $_POST['email'];
-    $senha = $_POST['senha'];
+    $senha = password_hash($_POST['senha'], PASSWORD_DEFAULT);
     $stmt -> execute();
     header("location: ../login/login.html");
 }

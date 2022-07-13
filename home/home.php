@@ -18,7 +18,7 @@ include '../services/protecao.php'
                 <li class="list-item"> <a href="../home/home.php">Home</a></li>
                 <li class="list-item"> <a href="../add-contato/add-contato.php">Adicionar contato</a> </li>
                 <li class="list-item"> <a href="../visualizar-contato/visualizar-contato.php">Visualizar Contatos</a> </li>
-                <li class="list-item"> <a href="../login/login.html">Sair</a></li>
+                <li class="list-item"> <a href="../services/close-session.php">Sair</a></li>
             </ul>
         </nav>
     </header>

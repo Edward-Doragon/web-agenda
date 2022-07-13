@@ -23,5 +23,9 @@ include '../services/protecao.php'
         </nav>
     </header>
     <h1>Visualizando</h1>
+
+    <?php 
+        include "get-contatos.php";
+    ?>
 </body>
 </html>

@@ -2,7 +2,7 @@
     include ('../services/protecao.php');
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../assets/reset.css">
     <link rel="stylesheet" href="../assets/style.css">
     <link rel="stylesheet" href="../assets/navbar.css">
-    <title>Adicionar Contato</title>
+    <title>Editar Contato</title>
 </head>
 <body>
     <header>
@@ -24,7 +24,7 @@
         </nav>
     </header>
     
-    <h1 class="title">Adicionar contato</h1>
+    <h1 class="title">Editar contato</h1>
 
 
     <form action="save-contato.php" method="post">
@@ -57,6 +57,4 @@
     </form>
 
 </body>
-
-<script src="../services/viaCep.js"></script>
 </html>

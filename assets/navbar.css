@@ -1,7 +1,9 @@
+@import url("root.css");
 .navbar{
     display: flex;
     height: 60px;
-    background: rgb(102, 180, 223);
+    background-color: var(--brand400);
+    margin-bottom: 2rem;
 }
 
 .list-item{
@@ -10,5 +12,15 @@
     margin-right: 15px;
     padding: 15px;
     font-size: 1.5rem;
- 
+    
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+a:hover{
+    text-decoration: underline;
 }

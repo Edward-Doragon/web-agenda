@@ -1,14 +1,15 @@
+@import url("root.css");
+
 
 .form-wrapper{
-    background: rgb(246, 246, 246);
     display: flex;
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 450px;
     margin: auto;
     border-radius: 10px;
     justify-content: center;
-    box-shadow: 0px 0px 20px rgb(182, 181, 181);
     margin-top: 100px;
+    background-color: var(--display100);
 }
 
 .title{
@@ -24,11 +25,18 @@
 }
 
 .form-input{
+    border: 1px solid var(--display200);
     margin-bottom: 10px;
-    border: none;
+    border-radius: 0.5rem;
     padding: 10px;
     width: 200px;
-    border: 1px solid rgb(235, 235, 235);
+}
+.form-input:hover{
+    border-color: var(--brand400);
+}
+
+.form-input:focus-visible{
+    outline: none;
 }
 
 .button{
@@ -36,12 +44,14 @@
     padding: 10px;
     width: 220px;
     margin-bottom: 15px;
-    border: none;
     cursor: pointer;
-    background-color: rgb(239, 206, 77);
+    background-color: var(--brand400);
     margin: 10px 0px;
+    border-radius: 0.5rem;
+    border: none;
+    color: var(--display0);
 }
 
 .button:hover{
-    background-color: rgb(223, 181, 13);
+    background-color: var(--brand500);
 }

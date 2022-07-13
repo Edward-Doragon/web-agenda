@@ -1,24 +1,23 @@
 <?php
 require_once "../services/conection.php";
 try{
-    $stmt = $conn -> prepare ("SELECT * FROM usuario WHERE email = :email");
+    $stmt = $conn -> prepare ("SELECT * FROM usuario WHERE email = :email" );
     $stmt -> bindParam(':email', $_POST['email']);
     $stmt -> execute();
 
     $stmt -> setFetchMode(PDO::FETCH_ASSOC);
     $result = $stmt -> fetch();
     $hash = $result['senha'];
-
     
-    if( ! $_POST['senha'] == $hash){
-        echo ("deu ruim");
-        exit;
+    if( password_verify($_POST['senha'], $hash)){
+        session_start();
+        $_SESSION['usuario'] = $result;
+        header("location: ../home/home.php");
+        exit();
+    }else{
+        echo ("E-mail ou Senha Inválido");
+        exit();
     }
-
-    session_start();
-    $_SESSION['usuario'] = $result;
-    
-    header("location: ../home/home.php");
 }
 catch(PDOException $e){
     echo "ERRO: " .$e -> getMessage();
