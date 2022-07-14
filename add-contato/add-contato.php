@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="../assets/reset.css">
     <link rel="stylesheet" href="../assets/style.css">
     <link rel="stylesheet" href="../assets/navbar.css">
+    <link rel="stylesheet" href="add-contato.css">
+    <link rel="shortcut icon" href="../assets/imagens/favicon.ico" type="image/x-icon">
     <title>Adicionar Contato</title>
 </head>
 <body>
@@ -27,7 +29,7 @@
     <h1 class="title">Adicionar contato</h1>
 
 
-    <form action="save-contato.php" method="post">
+    <form class="add-form" action="save-contato.php" method="post">
 
         <label class="form-label" for="name"> Nome: </label >
         <input class="form-input" type="text" id="name"  placeholder="Nome" name="nome" required>

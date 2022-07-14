@@ -1,10 +1,10 @@
 <?php
 
 require_once "../services/conection.php";
+session_start();
 
 try{
-    $stmt = $conn -> prepare("INSERT INTO contato (nome, email, telefone, cep, rua, bairro, estado, cidade, fk_usuario)
-    VALUES (:nome, :email, :telefone, :cep, :rua, :bairro, :estado, :cidade, :fk_usuario)");
+    $stmt = $conn -> prepare("UPDATE contato SET nome = :nome, email = :email, telefone = :telefone, cep = :cep, rua = :rua, bairro = :bairro, estado = :estado, cidade = :cidade WHERE id = :id_contato");
 
     $stmt -> bindParam(':nome', $nome);
     $stmt -> bindParam(':email', $email);
@@ -14,7 +14,7 @@ try{
     $stmt -> bindParam(':bairro', $bairro);
     $stmt -> bindParam(':estado', $estado);
     $stmt -> bindParam(':cidade', $cidade);
-    $stmt -> bindParam(':fk_usuario', $fk_usuario);
+    $stmt -> bindParam(':id_contato', $id_contato);
 
     $nome = $_POST['nome'];
     $email = $_POST['email'];
@@ -24,7 +24,7 @@ try{
     $bairro = $_POST['bairro'];
     $estado = $_POST['estado'];
     $cidade = $_POST['cidade'];
-    $fk_usuario = "1224";
+    $id_contato = $_GET['id'];
 
 
     $stmt -> execute();

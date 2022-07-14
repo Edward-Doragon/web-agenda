@@ -9,6 +9,8 @@ include '../services/protecao.php'
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/reset.css">
     <link rel="stylesheet" href="../assets/navbar.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="shortcut icon" href="../assets/imagens/favicon.ico" type="image/x-icon">
     <title>Home</title>
 </head>
 <body>
@@ -24,7 +26,7 @@ include '../services/protecao.php'
     </header>
 
     <body>
-        <h3>Bem vindo</h3>
+        <h3 class="welcome">Bem vindo a sua Web Agenda <?php echo $_SESSION['usuario']['nome'] ?> </h3>
 
     </body>
 </body>

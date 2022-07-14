@@ -1,5 +1,6 @@
 <?php
     include ('../services/protecao.php');
+    
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -10,6 +11,8 @@
     <link rel="stylesheet" href="../assets/reset.css">
     <link rel="stylesheet" href="../assets/style.css">
     <link rel="stylesheet" href="../assets/navbar.css">
+    <link rel="stylesheet" href="edit-contato.css">
+    <link rel="shortcut icon" href="../assets/imagens/favicon.ico" type="image/x-icon">
     <title>Editar Contato</title>
 </head>
 <body>
@@ -24,10 +27,10 @@
         </nav>
     </header>
     
-    <h1 class="title">Editar contato</h1>
+    <h1 class="title">Editar contato  </h1>
 
 
-    <form action="save-contato.php" method="post">
+    <form action="update-contato.php?id=<?php echo $_GET['id'] ?>" method="POST" class="edit-form">
 
         <label class="form-label" for="name"> Nome: </label >
         <input class="form-input" type="text" id="name"  placeholder="Nome" name="nome" required>
@@ -53,8 +56,13 @@
         <label class="form-label" for="cidade">Cidade</label>
         <input class="form-input" type="text" id="cidade" placeholder="Cidade" name="cidade" >
 
-        <button class="button" type="submit">Salvar Contato</button>
+        <button class="button" type="submit">Atualizar Dados</button>
     </form>
 
+    <script src="update.js">
+    </script>
+    <script>
+        pesquisaContato( <?php echo $_GET['id']?>)
+    </script>
 </body>
 </html>

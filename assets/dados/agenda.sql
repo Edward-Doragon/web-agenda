@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: 13-Jul-2022 às 21:12
+-- Generation Time: 14-Jul-2022 às 23:10
 -- Versão do servidor: 5.7.11
 -- PHP Version: 7.0.3
 
@@ -44,7 +44,10 @@ CREATE TABLE `contato` (
 --
 
 INSERT INTO `contato` (`id`, `nome`, `telefone`, `email`, `cep`, `rua`, `bairro`, `estado`, `cidade`, `fk_usuario`) VALUES
-(2, 'Carlos Eduardo de Souza', '74981141887', 'carlosjacobina@hotmail.com', '44700-000', 'do galeÃ£o', 'centro', 'BA', 'Jacobina', 1224);
+(2, 'Carlos Eduardo de Souza', '74981141887', 'carlosjacobina@hotmail.com', '44700-000', 'do galeÃ£o', 'centro', 'BA', 'Jacobina', 1224),
+(4, 'contato carlos', '74981141887', 'carlos@carlos.com', '44700-000', 'do galeÃ£o', 'centro', 'BA', 'Jacobina', 17),
+(6, 'teste6 66', '74981141887', 'carlosjacobina@hotmail.com', '44700-000', 'do galeÃ£o', 'teste', 'BA', 'Jacobina', 16),
+(9, 'teste 11', '74981141889', 'carlosjacobina@hotmail.com', '44700-000', 'do galeÃ£o', 'centro', 'BA', 'Jacobina', 16);
 
 -- --------------------------------------------------------
 
@@ -92,7 +95,7 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT for table `contato`
 --
 ALTER TABLE `contato`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 --
 -- AUTO_INCREMENT for table `usuario`
 --

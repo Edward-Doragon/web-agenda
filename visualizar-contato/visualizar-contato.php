@@ -9,7 +9,10 @@ include '../services/protecao.php'
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/reset.css">
     <link rel="stylesheet" href="../assets/navbar.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="stylesheet" href="visualiza.css">
+    <link rel="shortcut icon" href="../assets/imagens/favicon.ico" type="image/x-icon">
+    <title>Visualizar Contatos</title>
 </head>
 <body>
     <header>
@@ -22,10 +25,13 @@ include '../services/protecao.php'
             </ul>
         </nav>
     </header>
-    <h1>Visualizando</h1>
+    <h1 class="title">Contatos</h1>
 
-    <?php 
-        include "get-contatos.php";
-    ?>
+    <div class="wrapper-contatos">
+        <?php 
+            include "get-contatos.php";
+        ?>
+    </div>
+
 </body>
 </html>

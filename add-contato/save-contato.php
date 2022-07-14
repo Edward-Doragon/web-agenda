@@ -1,6 +1,7 @@
 <?php
 
 require_once "../services/conection.php";
+include '../services/protecao.php';
 
 try{
     $stmt = $conn -> prepare("INSERT INTO contato (nome, email, telefone, cep, rua, bairro, estado, cidade, fk_usuario)
@@ -24,7 +25,7 @@ try{
     $bairro = $_POST['bairro'];
     $estado = $_POST['estado'];
     $cidade = $_POST['cidade'];
-    $fk_usuario = "1224";
+    $fk_usuario = $_SESSION['usuario']['id'];
 
 
     $stmt -> execute();
